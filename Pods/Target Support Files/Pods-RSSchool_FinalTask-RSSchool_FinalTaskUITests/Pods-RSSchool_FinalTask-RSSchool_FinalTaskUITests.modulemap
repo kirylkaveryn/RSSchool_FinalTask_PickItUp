@@ -1,0 +1,6 @@
+framework module Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests {
+  umbrella header "Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

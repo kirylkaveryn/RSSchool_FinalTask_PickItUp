@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSDumpDetailVC" customModule="RSSchool_FinalTask" customModuleProvider="target">
+            <connections>
+                <outlet property="addFromLibraryButton" destination="A8i-cx-SaS" id="tow-w7-Lad"/>
+                <outlet property="addPhotoLabel" destination="GbJ-1d-kyc" id="lXT-93-Ewg"/>
+                <outlet property="clearedDumpImagesCollectionView" destination="2w3-Xg-TAh" id="WpG-XK-6MF"/>
+                <outlet property="closeButton" destination="JO1-bk-bSf" id="lXr-GF-bcA"/>
+                <outlet property="coordinatesImage" destination="cJ8-lN-tdS" id="SGp-KX-d9b"/>
+                <outlet property="deleteAndPickStack" destination="hDJ-kB-wW7" id="bFL-kr-9G4"/>
+                <outlet property="dumpCollectionView" destination="hWv-HJ-csb" id="rQr-X7-XKs"/>
+                <outlet property="dumpCoordinatesLabel" destination="pm9-fE-P7t" id="1nZ-NY-iBw"/>
+                <outlet property="dumpDateLabel" destination="61w-4D-FVG" id="KWx-NJ-xdW"/>
+                <outlet property="dumpDeleteButton" destination="ALt-PO-tfO" id="hLE-We-ie7"/>
+                <outlet property="dumpInformationStack" destination="6TT-5c-CpL" id="2qJ-0d-GBh"/>
+                <outlet property="dumpLocationNameLabel" destination="8Rl-zX-oFD" id="ufd-9P-amk"/>
+                <outlet property="dumpNameLabel" destination="JF1-dL-WDa" id="RA2-EH-MmJ"/>
+                <outlet property="dumpPickButton" destination="2sd-Tj-7ic" id="OcD-Mt-Ude"/>
+                <outlet property="dumpSizeLabel" destination="dhK-et-GOf" id="JUb-yg-uf9"/>
+                <outlet property="dumpTypeLabel" destination="lOA-pm-PZZ" id="7Nb-zQ-dTH"/>
+                <outlet property="photoStack" destination="PZy-dP-zuu" id="8B9-Gx-lRb"/>
+                <outlet property="saveButton" destination="Bbc-Nz-Pvw" id="JNr-bG-Ekp"/>
+                <outlet property="takePhotoButton" destination="h5b-NY-SB4" id="2ON-wU-11o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" id="6TT-5c-CpL" userLabel="dumpInformationStack">
+                    <rect key="frame" x="26" y="74" width="134.5" height="92"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dump Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JF1-dL-WDa">
+                            <rect key="frame" x="0.0" y="0.0" width="134.5" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" placeholder="YES" id="5Vk-j9-iC3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="5Vk-j9-iC3"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locaton Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-zX-oFD">
+                            <rect key="frame" x="0.0" y="29" width="134.5" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" placeholder="YES" id="SUN-I1-3Ua"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="SUN-I1-3Ua"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size: Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhK-et-GOf">
+                            <rect key="frame" x="0.0" y="48.5" width="134.5" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" placeholder="YES" id="okz-cQ-hLa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="okz-cQ-hLa"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dump type: Mixed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOA-pm-PZZ">
+                            <rect key="frame" x="0.0" y="63" width="134.5" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" placeholder="YES" id="bfc-ly-Wq8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="bfc-ly-Wq8"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 04.10.2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61w-4D-FVG">
+                            <rect key="frame" x="0.0" y="77.5" width="134.5" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" placeholder="YES" id="qJ2-nz-TBO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="qJ2-nz-TBO"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="none" id="hWv-HJ-csb" userLabel="dumpImages">
+                    <rect key="frame" x="0.0" y="74" width="414" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rpg-gS-eeQ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pm9-fE-P7t">
+                    <rect key="frame" x="61" y="449.5" width="88" height="19.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.circle" catalog="system" id="cJ8-lN-tdS">
+                    <rect key="frame" x="26" y="446.5" width="25" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" placeholder="YES" id="Fr3-FS-Zrr"/>
+                        <constraint firstAttribute="width" constant="25" placeholder="YES" id="Zzi-K2-PQU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Fr3-FS-Zrr"/>
+                            <exclude reference="Zzi-K2-PQU"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="Fr3-FS-Zrr"/>
+                            <exclude reference="Zzi-K2-PQU"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="Fr3-FS-Zrr"/>
+                            <exclude reference="Zzi-K2-PQU"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="none" id="2w3-Xg-TAh" userLabel="clearedDumpImages">
+                    <rect key="frame" x="0.0" y="184" width="414" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ers-bP-dJC">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" id="hDJ-kB-wW7" userLabel="deleteAndPickStack">
+                    <rect key="frame" x="20" y="492" width="138" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2sd-Tj-7ic" customClass="RSRoundedButtonWithLabel" customModule="RSSchool_FinalTask" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="GreenMain"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" placeholder="YES" id="1cG-Oo-QHY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Pick up">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="1cG-Oo-QHY"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="1cG-Oo-QHY"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular">
+                                <mask key="constraints">
+                                    <exclude reference="1cG-Oo-QHY"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="dumpPickButtonDidPress:" destination="-1" eventType="touchUpInside" id="a8K-rp-BAe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ALt-PO-tfO" customClass="RSRoundedButtonWithLabel" customModule="RSSchool_FinalTask" customModuleProvider="target">
+                            <rect key="frame" x="79" y="0.0" width="59" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="RedMain"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Delete">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="dumpDeleteButtonDidPress:" destination="-1" eventType="touchUpInside" id="M6A-Di-9if"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" placeholder="YES" id="0bw-lK-P1c"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0bw-lK-P1c"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="0bw-lK-P1c"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="0bw-lK-P1c"/>
+                        </mask>
+                    </variation>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" id="PZy-dP-zuu" userLabel="photoStack">
+                    <rect key="frame" x="20" y="673" width="62" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="h5b-NY-SB4" customClass="RSButton" customModule="RSSchool_FinalTask" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="21" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="SecondaryBackground"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" placeholder="YES" id="0vP-Ii-7IH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <imageReference key="image" image="camera" catalog="system" symbolScale="medium"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0vP-Ii-7IH"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="0vP-Ii-7IH"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular">
+                                <mask key="constraints">
+                                    <exclude reference="0vP-Ii-7IH"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="takePhotoButtonDidPress:" destination="-1" eventType="touchUpInside" id="NIZ-qk-fHv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="A8i-cx-SaS" customClass="RSButton" customModule="RSSchool_FinalTask" customModuleProvider="target">
+                            <rect key="frame" x="41" y="0.0" width="21" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="SecondaryBackground"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <imageReference key="image" image="photo.on.rectangle.angled" catalog="system" symbolScale="medium"/>
+                            </state>
+                            <connections>
+                                <action selector="addPhotoDidPress:" destination="-1" eventType="touchUpInside" id="fdF-ER-sIS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bbc-Nz-Pvw" customClass="RSMenuButton" customModule="RSSchool_FinalTask" customModuleProvider="target">
+                    <rect key="frame" x="20" y="743" width="374" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" name="GreenMain"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" placeholder="YES" id="6tZ-PN-XqL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save Dump">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6tZ-PN-XqL"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="6tZ-PN-XqL"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="6tZ-PN-XqL"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="saveButtonDidPress:" destination="-1" eventType="touchUpInside" id="CcO-ZL-R92"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleared dump photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GbJ-1d-kyc">
+                    <rect key="frame" x="20" y="540" width="374" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" placeholder="YES" id="5MC-6P-WjQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5MC-6P-WjQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="5MC-6P-WjQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="5MC-6P-WjQ"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JO1-bk-bSf" userLabel="closeButton">
+                    <rect key="frame" x="368" y="74" width="26" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="GreenMain"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" name="GreenMain"/>
+                        <imageReference key="image" image="xmark.circle" catalog="system" symbolScale="large"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="regular"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonDidPress:" destination="-1" eventType="touchUpInside" id="4Dx-TD-2ea"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hWv-HJ-csb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" placeholder="YES" id="5GK-Js-DE0"/>
+                <constraint firstItem="hWv-HJ-csb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" placeholder="YES" id="6Gs-Mz-Sm5"/>
+                <constraint firstItem="pm9-fE-P7t" firstAttribute="leading" secondItem="cJ8-lN-tdS" secondAttribute="trailing" constant="10" placeholder="YES" id="Aeb-VA-c0l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PZy-dP-zuu" secondAttribute="trailing" constant="20" placeholder="YES" id="EeK-dy-Wov"/>
+                <constraint firstItem="2w3-Xg-TAh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" placeholder="YES" id="F5Y-le-qXv"/>
+                <constraint firstItem="GbJ-1d-kyc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" placeholder="YES" id="JBX-cJ-wiq"/>
+                <constraint firstItem="pm9-fE-P7t" firstAttribute="centerY" secondItem="cJ8-lN-tdS" secondAttribute="centerY" placeholder="YES" id="MRI-Hn-cKw"/>
+                <constraint firstItem="PZy-dP-zuu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" placeholder="YES" id="Q7O-Vs-9nf"/>
+                <constraint firstItem="2w3-Xg-TAh" firstAttribute="top" secondItem="GbJ-1d-kyc" secondAttribute="bottom" constant="20" placeholder="YES" id="Zuy-JF-Zvq"/>
+                <constraint firstItem="hDJ-kB-wW7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" placeholder="YES" id="f43-vj-ID4"/>
+                <constraint firstItem="hDJ-kB-wW7" firstAttribute="top" secondItem="hWv-HJ-csb" secondAttribute="bottom" constant="50" placeholder="YES" id="g6C-mZ-e7Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Bbc-Nz-Pvw" secondAttribute="bottom" constant="20" placeholder="YES" id="jfD-1F-dIr"/>
+                <constraint firstItem="2w3-Xg-TAh" firstAttribute="top" secondItem="hDJ-kB-wW7" secondAttribute="bottom" constant="20" placeholder="YES" id="l3F-Kh-oSV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hDJ-kB-wW7" secondAttribute="trailing" constant="20" placeholder="YES" id="thW-Nq-g0x"/>
+                <constraint firstItem="Bbc-Nz-Pvw" firstAttribute="top" secondItem="PZy-dP-zuu" secondAttribute="bottom" constant="20" placeholder="YES" id="tpf-6w-PQL"/>
+                <constraint firstItem="cJ8-lN-tdS" firstAttribute="top" secondItem="hWv-HJ-csb" secondAttribute="bottom" constant="10" placeholder="YES" id="uMX-Rb-5TL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbJ-1d-kyc" secondAttribute="trailing" constant="20" placeholder="YES" id="uXn-mc-VXK"/>
+                <constraint firstItem="2w3-Xg-TAh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" placeholder="YES" id="upE-HN-pyV"/>
+                <constraint firstItem="PZy-dP-zuu" firstAttribute="top" secondItem="2w3-Xg-TAh" secondAttribute="bottom" constant="20" placeholder="YES" id="vGd-iC-vcc"/>
+                <constraint firstItem="GbJ-1d-kyc" firstAttribute="top" secondItem="hWv-HJ-csb" secondAttribute="bottom" constant="50" placeholder="YES" id="vYX-bM-PDY"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="EeK-dy-Wov"/>
+                    <exclude reference="jfD-1F-dIr"/>
+                    <exclude reference="thW-Nq-g0x"/>
+                    <exclude reference="uXn-mc-VXK"/>
+                    <exclude reference="5GK-Js-DE0"/>
+                    <exclude reference="6Gs-Mz-Sm5"/>
+                    <exclude reference="F5Y-le-qXv"/>
+                    <exclude reference="Zuy-JF-Zvq"/>
+                    <exclude reference="l3F-Kh-oSV"/>
+                    <exclude reference="upE-HN-pyV"/>
+                    <exclude reference="uMX-Rb-5TL"/>
+                    <exclude reference="Aeb-VA-c0l"/>
+                    <exclude reference="MRI-Hn-cKw"/>
+                    <exclude reference="f43-vj-ID4"/>
+                    <exclude reference="g6C-mZ-e7Q"/>
+                    <exclude reference="JBX-cJ-wiq"/>
+                    <exclude reference="vYX-bM-PDY"/>
+                    <exclude reference="Q7O-Vs-9nf"/>
+                    <exclude reference="vGd-iC-vcc"/>
+                    <exclude reference="tpf-6w-PQL"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="EeK-dy-Wov"/>
+                    <exclude reference="jfD-1F-dIr"/>
+                    <exclude reference="thW-Nq-g0x"/>
+                    <exclude reference="uXn-mc-VXK"/>
+                    <exclude reference="5GK-Js-DE0"/>
+                    <exclude reference="6Gs-Mz-Sm5"/>
+                    <exclude reference="F5Y-le-qXv"/>
+                    <exclude reference="Zuy-JF-Zvq"/>
+                    <exclude reference="l3F-Kh-oSV"/>
+                    <exclude reference="upE-HN-pyV"/>
+                    <exclude reference="uMX-Rb-5TL"/>
+                    <exclude reference="Aeb-VA-c0l"/>
+                    <exclude reference="MRI-Hn-cKw"/>
+                    <exclude reference="f43-vj-ID4"/>
+                    <exclude reference="g6C-mZ-e7Q"/>
+                    <exclude reference="JBX-cJ-wiq"/>
+                    <exclude reference="vYX-bM-PDY"/>
+                    <exclude reference="Q7O-Vs-9nf"/>
+                    <exclude reference="vGd-iC-vcc"/>
+                    <exclude reference="tpf-6w-PQL"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <exclude reference="EeK-dy-Wov"/>
+                    <exclude reference="jfD-1F-dIr"/>
+                    <exclude reference="thW-Nq-g0x"/>
+                    <exclude reference="uXn-mc-VXK"/>
+                    <exclude reference="5GK-Js-DE0"/>
+                    <exclude reference="6Gs-Mz-Sm5"/>
+                    <exclude reference="F5Y-le-qXv"/>
+                    <exclude reference="Zuy-JF-Zvq"/>
+                    <exclude reference="l3F-Kh-oSV"/>
+                    <exclude reference="upE-HN-pyV"/>
+                    <exclude reference="uMX-Rb-5TL"/>
+                    <exclude reference="Aeb-VA-c0l"/>
+                    <exclude reference="MRI-Hn-cKw"/>
+                    <exclude reference="f43-vj-ID4"/>
+                    <exclude reference="g6C-mZ-e7Q"/>
+                    <exclude reference="JBX-cJ-wiq"/>
+                    <exclude reference="vYX-bM-PDY"/>
+                    <exclude reference="Q7O-Vs-9nf"/>
+                    <exclude reference="vGd-iC-vcc"/>
+                    <exclude reference="tpf-6w-PQL"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="131.8840579710145" y="59.598214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="100"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="GreenMain">
+            <color red="0.086000002920627594" green="0.76899999380111694" blue="0.60399997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedMain">
+            <color red="0.8410000205039978" green="0.15099999308586121" blue="0.22100000083446503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryBackground">
+            <color red="1" green="1" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

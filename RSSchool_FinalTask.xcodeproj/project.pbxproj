@@ -1,0 +1,1276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3060F2E296116CEFD8E4C651 /* Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4C17B1074B16AB2341B9B5 /* Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests.framework */; };
+		877DB8B5597DDB8299B2822C /* Pods_RSSchool_FinalTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B510A85CF4AB765250819 /* Pods_RSSchool_FinalTaskTests.framework */; };
+		BB3511ADEF385339A3FB32B8 /* Pods_RSSchool_FinalTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BEF401A77EF77595798AB7 /* Pods_RSSchool_FinalTask.framework */; };
+		ED0D6F8B272B4565009D82B9 /* RSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0D6F88272B4565009D82B9 /* RSLoginVC.xib */; };
+		ED0D6F8C272B4565009D82B9 /* RSLoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D6F89272B4565009D82B9 /* RSLoginVM.swift */; };
+		ED0D6F8D272B4565009D82B9 /* RSRLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D6F8A272B4565009D82B9 /* RSRLoginVC.swift */; };
+		ED0D6F8F272B5393009D82B9 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D6F8E272B5393009D82B9 /* AlertPresenter.swift */; };
+		ED3B2EC72734426700ACE1B9 /* RSDumpMarkerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2EC62734426700ACE1B9 /* RSDumpMarkerAnnotation.swift */; };
+		ED3B2ECD27355FE400ACE1B9 /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2ECC27355FE300ACE1B9 /* CALayer+Shadow.swift */; };
+		ED3B2ED0273692AC00ACE1B9 /* RSDumpCreateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2ECF273692AB00ACE1B9 /* RSDumpCreateCoordinator.swift */; };
+		ED3B2ED2273694E600ACE1B9 /* RSDumpCreateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2ED1273694E600ACE1B9 /* RSDumpCreateVM.swift */; };
+		ED3B2EDA2736A26B00ACE1B9 /* RSDumpCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2ED82736A26B00ACE1B9 /* RSDumpCreateVC.swift */; };
+		ED3B2EDB2736A26B00ACE1B9 /* RSDumpCreateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B2ED92736A26B00ACE1B9 /* RSDumpCreateVC.xib */; };
+		ED3B2EDD2736B66200ACE1B9 /* RSMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2EDC2736B66200ACE1B9 /* RSMenuButton.swift */; };
+		ED3B2EDF2737462800ACE1B9 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2EDE2737462800ACE1B9 /* CurrentLocation.swift */; };
+		ED3B2EE42738342800ACE1B9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2EE32738342800ACE1B9 /* Validation.swift */; };
+		ED3B2EE6273975A500ACE1B9 /* RSActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2EE5273975A400ACE1B9 /* RSActivityIndicator.swift */; };
+		ED3B47B6273067F90058C843 /* RSUserAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47B5273067F80058C843 /* RSUserAccountCoordinator.swift */; };
+		ED3B47B8273068D90058C843 /* RSUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47B7273068D90058C843 /* RSUserAccountVM.swift */; };
+		ED3B47BB27306FC70058C843 /* RSUserAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47B927306FC70058C843 /* RSUserAccountVC.swift */; };
+		ED3B47BC27306FC70058C843 /* RSUserAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B47BA27306FC70058C843 /* RSUserAccountVC.xib */; };
+		ED3B47BF27308F000058C843 /* RSUserSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47BE27308F000058C843 /* RSUserSettingsTableViewCell.swift */; };
+		ED3B47C12730A6630058C843 /* RSUserSettingsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47C02730A6630058C843 /* RSUserSettingsTableViewCellViewModel.swift */; };
+		ED3B47C32730A9EE0058C843 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47C22730A9EE0058C843 /* UserModel.swift */; };
+		ED3B47C6273169EA0058C843 /* RSDateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47C5273169EA0058C843 /* RSDateConverter.swift */; };
+		ED3B47C8273195160058C843 /* RSUserSettingsTableViewCellWithSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47C7273195160058C843 /* RSUserSettingsTableViewCellWithSubtitle.swift */; };
+		ED3B47CC2731F2880058C843 /* RSTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47CB2731F2870058C843 /* RSTableViewHeader.swift */; };
+		ED3B47CE2731F7370058C843 /* RSUserSettingsTableViewCellValue1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47CD2731F7370058C843 /* RSUserSettingsTableViewCellValue1.swift */; };
+		ED3B47D02732B7BA0058C843 /* RSUserSettingsTableViewCellEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B47CF2732B7BA0058C843 /* RSUserSettingsTableViewCellEditable.swift */; };
+		ED4836262747ED2B00FA6BF1 /* RSImagePresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4836252747ED2B00FA6BF1 /* RSImagePresentationVC.swift */; };
+		ED5FC7842725E5620055FDDF /* RSApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7812725E5620055FDDF /* RSApplicationCoordinator.swift */; };
+		ED5FC7852725E5620055FDDF /* RSCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7832725E5620055FDDF /* RSCoordinator.swift */; };
+		ED5FC7882725EA0C0055FDDF /* RSMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7872725EA0C0055FDDF /* RSMapCoordinator.swift */; };
+		ED5FC78B2725F9510055FDDF /* RSMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7892725F9510055FDDF /* RSMapVC.swift */; };
+		ED5FC78C2725F9510055FDDF /* RSMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5FC78A2725F9510055FDDF /* RSMapVC.xib */; };
+		ED5FC78F272600D00055FDDF /* RSTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC78E272600D00055FDDF /* RSTabBarVC.swift */; };
+		ED5FC791272603B40055FDDF /* RSTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC790272603B40055FDDF /* RSTabBarCoordinator.swift */; };
+		ED5FC798272623320055FDDF /* UIColor+DefaultColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC795272623320055FDDF /* UIColor+DefaultColors.swift */; };
+		ED5FC79A2726DD540055FDDF /* RSMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7992726DD540055FDDF /* RSMapVM.swift */; };
+		ED5FC79D272864950055FDDF /* RSMapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC79C272864950055FDDF /* RSMapButton.swift */; };
+		ED5FC79F2728A79B0055FDDF /* RSDefaultIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC79E2728A79B0055FDDF /* RSDefaultIcons.swift */; };
+		ED5FC7A32728C0480055FDDF /* RSDumpDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7A12728C0480055FDDF /* RSDumpDetailCoordinator.swift */; };
+		ED5FC7A42728C0480055FDDF /* RSDumpDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7A22728C0480055FDDF /* RSDumpDetailVM.swift */; };
+		ED5FC7A72728C1BD0055FDDF /* RSDumpDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7A52728C1BD0055FDDF /* RSDumpDetailVC.swift */; };
+		ED5FC7A82728C1BD0055FDDF /* RSDumpDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5FC7A62728C1BD0055FDDF /* RSDumpDetailVC.xib */; };
+		ED5FC7AA2728C7B20055FDDF /* RSDumpDetailPresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7A92728C7B20055FDDF /* RSDumpDetailPresentationVC.swift */; };
+		ED5FC7AC27296E440055FDDF /* RSRoundedButtonWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7AB27296E440055FDDF /* RSRoundedButtonWithLabel.swift */; };
+		ED5FC7AF2729F50B0055FDDF /* RSImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FC7AE2729F50B0055FDDF /* RSImageCell.swift */; };
+		ED6480712741AFDF00AB9375 /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6480702741AFDF00AB9375 /* AppLogo.png */; };
+		ED7BA839272ACB130026E195 /* RSRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA837272ACB130026E195 /* RSRegistrationVC.swift */; };
+		ED7BA83A272ACB130026E195 /* RSRegistrationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7BA838272ACB130026E195 /* RSRegistrationVC.xib */; };
+		ED7BA83C272ADC8F0026E195 /* RSLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA83B272ADC8F0026E195 /* RSLoginCoordinator.swift */; };
+		ED7BA83E272AEBE00026E195 /* RSRegistrationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA83D272AEBE00026E195 /* RSRegistrationVM.swift */; };
+		ED7BA840272AED960026E195 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA83F272AED960026E195 /* AuthorizationService.swift */; };
+		ED913344273C14C200A612C6 /* RSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913343273C14C200A612C6 /* RSButton.swift */; };
+		ED91334C273DBFFE00A612C6 /* RSDumpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91334A273DBFFE00A612C6 /* RSDumpTableViewController.swift */; };
+		ED91334D273DBFFE00A612C6 /* RSDumpTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED91334B273DBFFE00A612C6 /* RSDumpTableViewController.xib */; };
+		ED913350273DC01E00A612C6 /* RSDumpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91334E273DC01E00A612C6 /* RSDumpTableViewCell.swift */; };
+		ED913351273DC01E00A612C6 /* RSDumpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED91334F273DC01E00A612C6 /* RSDumpTableViewCell.xib */; };
+		ED913353273DC71200A612C6 /* RSDumpTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913352273DC71200A612C6 /* RSDumpTableVM.swift */; };
+		ED913355273DDC0C00A612C6 /* RSDumpTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913354273DDC0C00A612C6 /* RSDumpTableCoordinator.swift */; };
+		ED913358273EAABE00A612C6 /* RSDumpPickedTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913357273EAABD00A612C6 /* RSDumpPickedTableVM.swift */; };
+		ED91335A273EE22A00A612C6 /* DumpTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913359273EE22A00A612C6 /* DumpTableViewCellModel.swift */; };
+		ED91335C273EF74400A612C6 /* RSAuthorizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91335B273EF74400A612C6 /* RSAuthorizationServiceTests.swift */; };
+		ED913360273F087800A612C6 /* RSShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91335F273F087800A612C6 /* RSShadowImageView.swift */; };
+		ED913363273FDC0400A612C6 /* RSStatisticsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913362273FDC0400A612C6 /* RSStatisticsCoordinator.swift */; };
+		ED913365273FDC1400A612C6 /* RSStatisticsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913364273FDC1400A612C6 /* RSStatisticsVM.swift */; };
+		ED913368273FDDEA00A612C6 /* RSStatisticsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913366273FDDEA00A612C6 /* RSStatisticsTableVC.swift */; };
+		ED913369273FDDEA00A612C6 /* RSStatisticsTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED913367273FDDEA00A612C6 /* RSStatisticsTableVC.xib */; };
+		ED91336C273FDF1600A612C6 /* RSUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91336A273FDF1600A612C6 /* RSUserTableViewCell.swift */; };
+		ED91336D273FDF1600A612C6 /* RSUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED91336B273FDF1600A612C6 /* RSUserTableViewCell.xib */; };
+		ED913370273FE1C500A612C6 /* RSUserTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91336F273FE1C500A612C6 /* RSUserTableViewCellModel.swift */; };
+		ED913374273FE67100A612C6 /* UserEasyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913373273FE67100A612C6 /* UserEasyModel.swift */; };
+		ED913376274070A700A612C6 /* RSCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913375274070A600A612C6 /* RSCircleImageView.swift */; };
+		ED913378274071BD00A612C6 /* RSNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913377274071BD00A612C6 /* RSNavigationVC.swift */; };
+		ED91337A274136AD00A612C6 /* RSDumpClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED913379274136AB00A612C6 /* RSDumpClusterView.swift */; };
+		EDD78D2A2724CA4F005FA97D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD78D292724CA4F005FA97D /* AppDelegate.swift */; };
+		EDD78D342724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDD78D322724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodeld */; };
+		EDD78D362724CA53005FA97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD78D352724CA53005FA97D /* Assets.xcassets */; };
+		EDD78D392724CA53005FA97D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD78D372724CA53005FA97D /* LaunchScreen.storyboard */; };
+		EDD78D4E2724CA54005FA97D /* RSSchool_FinalTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD78D4D2724CA54005FA97D /* RSSchool_FinalTaskUITests.swift */; };
+		EDD78D502724CA54005FA97D /* RSSchool_FinalTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD78D4F2724CA54005FA97D /* RSSchool_FinalTaskUITestsLaunchTests.swift */; };
+		EDE6A0442724CC88007CA607 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE6A0432724CC88007CA607 /* GoogleService-Info.plist */; };
+		EDE6A0482724CD03007CA607 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6A0472724CD03007CA607 /* DatabaseService.swift */; };
+		EDE6A04B2724CD2E007CA607 /* DumpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6A04A2724CD2E007CA607 /* DumpModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDD78D402724CA54005FA97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD78D1E2724CA4F005FA97D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDD78D252724CA4F005FA97D;
+			remoteInfo = RSSchool_FinalTask;
+		};
+		EDD78D4A2724CA54005FA97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD78D1E2724CA4F005FA97D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDD78D252724CA4F005FA97D;
+			remoteInfo = RSSchool_FinalTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4523B3F1BBB6FF014BC77D6D /* Pods-RSSchool_FinalTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSchool_FinalTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-RSSchool_FinalTaskTests/Pods-RSSchool_FinalTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63BEF401A77EF77595798AB7 /* Pods_RSSchool_FinalTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSchool_FinalTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80584DB900BD45710B66B545 /* Pods-RSSchool_FinalTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSchool_FinalTask.debug.xcconfig"; path = "Target Support Files/Pods-RSSchool_FinalTask/Pods-RSSchool_FinalTask.debug.xcconfig"; sourceTree = "<group>"; };
+		8C4C17B1074B16AB2341B9B5 /* Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B8C25E37DA5410A6DA82B5 /* Pods-RSSchool_FinalTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSchool_FinalTask.release.xcconfig"; path = "Target Support Files/Pods-RSSchool_FinalTask/Pods-RSSchool_FinalTask.release.xcconfig"; sourceTree = "<group>"; };
+		9B881B1F0F9A3ADCFDAE616C /* Pods-RSSchool_FinalTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSchool_FinalTaskTests.release.xcconfig"; path = "Target Support Files/Pods-RSSchool_FinalTaskTests/Pods-RSSchool_FinalTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2CDE368DB2D0DE239680C2A /* Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E61B40F93DFA544E663993CE /* Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9B510A85CF4AB765250819 /* Pods_RSSchool_FinalTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSchool_FinalTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0D6F88272B4565009D82B9 /* RSLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSLoginVC.xib; sourceTree = "<group>"; };
+		ED0D6F89272B4565009D82B9 /* RSLoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSLoginVM.swift; sourceTree = "<group>"; };
+		ED0D6F8A272B4565009D82B9 /* RSRLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSRLoginVC.swift; sourceTree = "<group>"; };
+		ED0D6F8E272B5393009D82B9 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		ED3B2EC62734426700ACE1B9 /* RSDumpMarkerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpMarkerAnnotation.swift; sourceTree = "<group>"; };
+		ED3B2ECC27355FE300ACE1B9 /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
+		ED3B2ECF273692AB00ACE1B9 /* RSDumpCreateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpCreateCoordinator.swift; sourceTree = "<group>"; };
+		ED3B2ED1273694E600ACE1B9 /* RSDumpCreateVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpCreateVM.swift; sourceTree = "<group>"; };
+		ED3B2ED82736A26B00ACE1B9 /* RSDumpCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpCreateVC.swift; sourceTree = "<group>"; };
+		ED3B2ED92736A26B00ACE1B9 /* RSDumpCreateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSDumpCreateVC.xib; sourceTree = "<group>"; };
+		ED3B2EDC2736B66200ACE1B9 /* RSMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSMenuButton.swift; sourceTree = "<group>"; };
+		ED3B2EDE2737462800ACE1B9 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
+		ED3B2EE32738342800ACE1B9 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		ED3B2EE5273975A400ACE1B9 /* RSActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSActivityIndicator.swift; sourceTree = "<group>"; };
+		ED3B47B5273067F80058C843 /* RSUserAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserAccountCoordinator.swift; sourceTree = "<group>"; };
+		ED3B47B7273068D90058C843 /* RSUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserAccountVM.swift; sourceTree = "<group>"; };
+		ED3B47B927306FC70058C843 /* RSUserAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserAccountVC.swift; sourceTree = "<group>"; };
+		ED3B47BA27306FC70058C843 /* RSUserAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSUserAccountVC.xib; sourceTree = "<group>"; };
+		ED3B47BE27308F000058C843 /* RSUserSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		ED3B47C02730A6630058C843 /* RSUserSettingsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserSettingsTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		ED3B47C22730A9EE0058C843 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		ED3B47C5273169EA0058C843 /* RSDateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDateConverter.swift; sourceTree = "<group>"; };
+		ED3B47C7273195160058C843 /* RSUserSettingsTableViewCellWithSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserSettingsTableViewCellWithSubtitle.swift; sourceTree = "<group>"; };
+		ED3B47CB2731F2870058C843 /* RSTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTableViewHeader.swift; sourceTree = "<group>"; };
+		ED3B47CD2731F7370058C843 /* RSUserSettingsTableViewCellValue1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserSettingsTableViewCellValue1.swift; sourceTree = "<group>"; };
+		ED3B47CF2732B7BA0058C843 /* RSUserSettingsTableViewCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserSettingsTableViewCellEditable.swift; sourceTree = "<group>"; };
+		ED4836252747ED2B00FA6BF1 /* RSImagePresentationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSImagePresentationVC.swift; sourceTree = "<group>"; };
+		ED5FC7812725E5620055FDDF /* RSApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSApplicationCoordinator.swift; sourceTree = "<group>"; };
+		ED5FC7832725E5620055FDDF /* RSCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCoordinator.swift; sourceTree = "<group>"; };
+		ED5FC7872725EA0C0055FDDF /* RSMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSMapCoordinator.swift; sourceTree = "<group>"; };
+		ED5FC7892725F9510055FDDF /* RSMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSMapVC.swift; sourceTree = "<group>"; };
+		ED5FC78A2725F9510055FDDF /* RSMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSMapVC.xib; sourceTree = "<group>"; };
+		ED5FC78E272600D00055FDDF /* RSTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTabBarVC.swift; sourceTree = "<group>"; };
+		ED5FC790272603B40055FDDF /* RSTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTabBarCoordinator.swift; sourceTree = "<group>"; };
+		ED5FC795272623320055FDDF /* UIColor+DefaultColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+DefaultColors.swift"; sourceTree = "<group>"; };
+		ED5FC7992726DD540055FDDF /* RSMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSMapVM.swift; sourceTree = "<group>"; };
+		ED5FC79C272864950055FDDF /* RSMapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSMapButton.swift; sourceTree = "<group>"; };
+		ED5FC79E2728A79B0055FDDF /* RSDefaultIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDefaultIcons.swift; sourceTree = "<group>"; };
+		ED5FC7A12728C0480055FDDF /* RSDumpDetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDumpDetailCoordinator.swift; sourceTree = "<group>"; };
+		ED5FC7A22728C0480055FDDF /* RSDumpDetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDumpDetailVM.swift; sourceTree = "<group>"; };
+		ED5FC7A52728C1BD0055FDDF /* RSDumpDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpDetailVC.swift; sourceTree = "<group>"; };
+		ED5FC7A62728C1BD0055FDDF /* RSDumpDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSDumpDetailVC.xib; sourceTree = "<group>"; };
+		ED5FC7A92728C7B20055FDDF /* RSDumpDetailPresentationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpDetailPresentationVC.swift; sourceTree = "<group>"; };
+		ED5FC7AB27296E440055FDDF /* RSRoundedButtonWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSRoundedButtonWithLabel.swift; sourceTree = "<group>"; };
+		ED5FC7AE2729F50B0055FDDF /* RSImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSImageCell.swift; sourceTree = "<group>"; };
+		ED6480702741AFDF00AB9375 /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogo.png; sourceTree = "<group>"; };
+		ED7BA837272ACB130026E195 /* RSRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSRegistrationVC.swift; sourceTree = "<group>"; };
+		ED7BA838272ACB130026E195 /* RSRegistrationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSRegistrationVC.xib; sourceTree = "<group>"; };
+		ED7BA83B272ADC8F0026E195 /* RSLoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLoginCoordinator.swift; sourceTree = "<group>"; };
+		ED7BA83D272AEBE00026E195 /* RSRegistrationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSRegistrationVM.swift; sourceTree = "<group>"; };
+		ED7BA83F272AED960026E195 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		ED913343273C14C200A612C6 /* RSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSButton.swift; sourceTree = "<group>"; };
+		ED91334A273DBFFE00A612C6 /* RSDumpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpTableViewController.swift; sourceTree = "<group>"; };
+		ED91334B273DBFFE00A612C6 /* RSDumpTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSDumpTableViewController.xib; sourceTree = "<group>"; };
+		ED91334E273DC01E00A612C6 /* RSDumpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpTableViewCell.swift; sourceTree = "<group>"; };
+		ED91334F273DC01E00A612C6 /* RSDumpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSDumpTableViewCell.xib; sourceTree = "<group>"; };
+		ED913352273DC71200A612C6 /* RSDumpTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpTableVM.swift; sourceTree = "<group>"; };
+		ED913354273DDC0C00A612C6 /* RSDumpTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpTableCoordinator.swift; sourceTree = "<group>"; };
+		ED913357273EAABD00A612C6 /* RSDumpPickedTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpPickedTableVM.swift; sourceTree = "<group>"; };
+		ED913359273EE22A00A612C6 /* DumpTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpTableViewCellModel.swift; sourceTree = "<group>"; };
+		ED91335B273EF74400A612C6 /* RSAuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAuthorizationServiceTests.swift; sourceTree = "<group>"; };
+		ED91335F273F087800A612C6 /* RSShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSShadowImageView.swift; sourceTree = "<group>"; };
+		ED913362273FDC0400A612C6 /* RSStatisticsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSStatisticsCoordinator.swift; sourceTree = "<group>"; };
+		ED913364273FDC1400A612C6 /* RSStatisticsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSStatisticsVM.swift; sourceTree = "<group>"; };
+		ED913366273FDDEA00A612C6 /* RSStatisticsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSStatisticsTableVC.swift; sourceTree = "<group>"; };
+		ED913367273FDDEA00A612C6 /* RSStatisticsTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSStatisticsTableVC.xib; sourceTree = "<group>"; };
+		ED91336A273FDF1600A612C6 /* RSUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserTableViewCell.swift; sourceTree = "<group>"; };
+		ED91336B273FDF1600A612C6 /* RSUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSUserTableViewCell.xib; sourceTree = "<group>"; };
+		ED91336F273FE1C500A612C6 /* RSUserTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSUserTableViewCellModel.swift; sourceTree = "<group>"; };
+		ED913373273FE67100A612C6 /* UserEasyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEasyModel.swift; sourceTree = "<group>"; };
+		ED913375274070A600A612C6 /* RSCircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSCircleImageView.swift; sourceTree = "<group>"; };
+		ED913377274071BD00A612C6 /* RSNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSNavigationVC.swift; sourceTree = "<group>"; };
+		ED913379274136AB00A612C6 /* RSDumpClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDumpClusterView.swift; sourceTree = "<group>"; };
+		EDD78D262724CA4F005FA97D /* RSSchool_FinalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_FinalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD78D292724CA4F005FA97D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDD78D332724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSSchool_FinalTask.xcdatamodel; sourceTree = "<group>"; };
+		EDD78D352724CA53005FA97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RSSchool_FinalTask/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		EDD78D382724CA53005FA97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDD78D3A2724CA53005FA97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDD78D3F2724CA54005FA97D /* RSSchool_FinalTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSchool_FinalTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD78D492724CA54005FA97D /* RSSchool_FinalTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSchool_FinalTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD78D4D2724CA54005FA97D /* RSSchool_FinalTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSchool_FinalTaskUITests.swift; sourceTree = "<group>"; };
+		EDD78D4F2724CA54005FA97D /* RSSchool_FinalTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSchool_FinalTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDE6A0432724CC88007CA607 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EDE6A0472724CD03007CA607 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		EDE6A04A2724CD2E007CA607 /* DumpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDD78D232724CA4F005FA97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3511ADEF385339A3FB32B8 /* Pods_RSSchool_FinalTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD78D3C2724CA54005FA97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877DB8B5597DDB8299B2822C /* Pods_RSSchool_FinalTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD78D462724CA54005FA97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3060F2E296116CEFD8E4C651 /* Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E7B2E9DBBA721C98E2650DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80584DB900BD45710B66B545 /* Pods-RSSchool_FinalTask.debug.xcconfig */,
+				96B8C25E37DA5410A6DA82B5 /* Pods-RSSchool_FinalTask.release.xcconfig */,
+				E61B40F93DFA544E663993CE /* Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.debug.xcconfig */,
+				C2CDE368DB2D0DE239680C2A /* Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.release.xcconfig */,
+				4523B3F1BBB6FF014BC77D6D /* Pods-RSSchool_FinalTaskTests.debug.xcconfig */,
+				9B881B1F0F9A3ADCFDAE616C /* Pods-RSSchool_FinalTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A39192D81BBC0674C27C9480 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63BEF401A77EF77595798AB7 /* Pods_RSSchool_FinalTask.framework */,
+				8C4C17B1074B16AB2341B9B5 /* Pods_RSSchool_FinalTask_RSSchool_FinalTaskUITests.framework */,
+				EB9B510A85CF4AB765250819 /* Pods_RSSchool_FinalTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED0D6F85272B3939009D82B9 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA83D272AEBE00026E195 /* RSRegistrationVM.swift */,
+				ED7BA837272ACB130026E195 /* RSRegistrationVC.swift */,
+				ED7BA838272ACB130026E195 /* RSRegistrationVC.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		ED0D6F86272B396F009D82B9 /* LoginAndRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA83B272ADC8F0026E195 /* RSLoginCoordinator.swift */,
+				ED0D6F87272B3986009D82B9 /* Login */,
+				ED0D6F85272B3939009D82B9 /* Registration */,
+			);
+			path = LoginAndRegistration;
+			sourceTree = "<group>";
+		};
+		ED0D6F87272B3986009D82B9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED0D6F89272B4565009D82B9 /* RSLoginVM.swift */,
+				ED0D6F8A272B4565009D82B9 /* RSRLoginVC.swift */,
+				ED0D6F88272B4565009D82B9 /* RSLoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ED3B2EC5273441AA00ACE1B9 /* AnnotationViews */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B2EC62734426700ACE1B9 /* RSDumpMarkerAnnotation.swift */,
+				ED913379274136AB00A612C6 /* RSDumpClusterView.swift */,
+			);
+			path = AnnotationViews;
+			sourceTree = "<group>";
+		};
+		ED3B2ECE2736928400ACE1B9 /* CreateDump */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B2ECF273692AB00ACE1B9 /* RSDumpCreateCoordinator.swift */,
+				ED3B2ED1273694E600ACE1B9 /* RSDumpCreateVM.swift */,
+				ED3B2ED82736A26B00ACE1B9 /* RSDumpCreateVC.swift */,
+				ED3B2ED92736A26B00ACE1B9 /* RSDumpCreateVC.xib */,
+			);
+			path = CreateDump;
+			sourceTree = "<group>";
+		};
+		ED3B47BD27308EB90058C843 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B47C02730A6630058C843 /* RSUserSettingsTableViewCellViewModel.swift */,
+				ED3B47BE27308F000058C843 /* RSUserSettingsTableViewCell.swift */,
+				ED3B47C7273195160058C843 /* RSUserSettingsTableViewCellWithSubtitle.swift */,
+				ED3B47CD2731F7370058C843 /* RSUserSettingsTableViewCellValue1.swift */,
+				ED3B47CF2732B7BA0058C843 /* RSUserSettingsTableViewCellEditable.swift */,
+				ED3B47CB2731F2870058C843 /* RSTableViewHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED3B47C4273169D70058C843 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B47C5273169EA0058C843 /* RSDateConverter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ED4836242747ED0E00FA6BF1 /* ImagePresentation */ = {
+			isa = PBXGroup;
+			children = (
+				ED4836252747ED2B00FA6BF1 /* RSImagePresentationVC.swift */,
+			);
+			path = ImagePresentation;
+			sourceTree = "<group>";
+		};
+		ED5FC7822725E5620055FDDF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ED5FC7832725E5620055FDDF /* RSCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		ED5FC7862725E9B90055FDDF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B2EC5273441AA00ACE1B9 /* AnnotationViews */,
+				ED5FC7872725EA0C0055FDDF /* RSMapCoordinator.swift */,
+				ED5FC7992726DD540055FDDF /* RSMapVM.swift */,
+				ED5FC7892725F9510055FDDF /* RSMapVC.swift */,
+				ED5FC78A2725F9510055FDDF /* RSMapVC.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		ED5FC78D272600BC0055FDDF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ED5FC790272603B40055FDDF /* RSTabBarCoordinator.swift */,
+				ED5FC78E272600D00055FDDF /* RSTabBarVC.swift */,
+				ED913377274071BD00A612C6 /* RSNavigationVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		ED5FC792272623320055FDDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED5FC795272623320055FDDF /* UIColor+DefaultColors.swift */,
+				ED3B2ECC27355FE300ACE1B9 /* CALayer+Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED5FC79B272864660055FDDF /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B2EE5273975A400ACE1B9 /* RSActivityIndicator.swift */,
+				ED5FC79E2728A79B0055FDDF /* RSDefaultIcons.swift */,
+				ED5FC79C272864950055FDDF /* RSMapButton.swift */,
+				ED5FC7AB27296E440055FDDF /* RSRoundedButtonWithLabel.swift */,
+				ED3B2EDC2736B66200ACE1B9 /* RSMenuButton.swift */,
+				ED913343273C14C200A612C6 /* RSButton.swift */,
+				ED91335F273F087800A612C6 /* RSShadowImageView.swift */,
+				ED913375274070A600A612C6 /* RSCircleImageView.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		ED5FC7A02728BCF00055FDDF /* DumpDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ED5FC7AD2729F4E70055FDDF /* Cells */,
+				ED5FC7A12728C0480055FDDF /* RSDumpDetailCoordinator.swift */,
+				ED5FC7A22728C0480055FDDF /* RSDumpDetailVM.swift */,
+				ED5FC7A52728C1BD0055FDDF /* RSDumpDetailVC.swift */,
+				ED5FC7A62728C1BD0055FDDF /* RSDumpDetailVC.xib */,
+				ED5FC7A92728C7B20055FDDF /* RSDumpDetailPresentationVC.swift */,
+			);
+			path = DumpDetail;
+			sourceTree = "<group>";
+		};
+		ED5FC7AD2729F4E70055FDDF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED5FC7AE2729F50B0055FDDF /* RSImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED64806D2741ABC100AB9375 /* LaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				ED6480702741AFDF00AB9375 /* AppLogo.png */,
+			);
+			path = LaunchImage;
+			sourceTree = "<group>";
+		};
+		ED7BA836272ACAC60026E195 /* UserAccount */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B47BD27308EB90058C843 /* Cells */,
+				ED3B47B5273067F80058C843 /* RSUserAccountCoordinator.swift */,
+				ED3B47B7273068D90058C843 /* RSUserAccountVM.swift */,
+				ED3B47B927306FC70058C843 /* RSUserAccountVC.swift */,
+				ED3B47BA27306FC70058C843 /* RSUserAccountVC.xib */,
+			);
+			path = UserAccount;
+			sourceTree = "<group>";
+		};
+		ED913345273DBE3800A612C6 /* DumpTables */ = {
+			isa = PBXGroup;
+			children = (
+				ED913356273E809500A612C6 /* TableViewCells */,
+				ED913354273DDC0C00A612C6 /* RSDumpTableCoordinator.swift */,
+				ED913352273DC71200A612C6 /* RSDumpTableVM.swift */,
+				ED913357273EAABD00A612C6 /* RSDumpPickedTableVM.swift */,
+				ED91334A273DBFFE00A612C6 /* RSDumpTableViewController.swift */,
+				ED91334B273DBFFE00A612C6 /* RSDumpTableViewController.xib */,
+			);
+			path = DumpTables;
+			sourceTree = "<group>";
+		};
+		ED913356273E809500A612C6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ED91334E273DC01E00A612C6 /* RSDumpTableViewCell.swift */,
+				ED91334F273DC01E00A612C6 /* RSDumpTableViewCell.xib */,
+				ED913359273EE22A00A612C6 /* DumpTableViewCellModel.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		ED913361273FDBBA00A612C6 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				ED91336E273FDF1D00A612C6 /* TableViewCells */,
+				ED913362273FDC0400A612C6 /* RSStatisticsCoordinator.swift */,
+				ED913364273FDC1400A612C6 /* RSStatisticsVM.swift */,
+				ED913366273FDDEA00A612C6 /* RSStatisticsTableVC.swift */,
+				ED913367273FDDEA00A612C6 /* RSStatisticsTableVC.xib */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		ED91336E273FDF1D00A612C6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ED91336A273FDF1600A612C6 /* RSUserTableViewCell.swift */,
+				ED91336B273FDF1600A612C6 /* RSUserTableViewCell.xib */,
+				ED91336F273FE1C500A612C6 /* RSUserTableViewCellModel.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		EDD78D1D2724CA4F005FA97D = {
+			isa = PBXGroup;
+			children = (
+				EDD78D282724CA4F005FA97D /* RSSchool_FinalTask */,
+				EDD78D422724CA54005FA97D /* RSSchool_FinalTaskTests */,
+				EDD78D4C2724CA54005FA97D /* RSSchool_FinalTaskUITests */,
+				EDD78D272724CA4F005FA97D /* Products */,
+				7E7B2E9DBBA721C98E2650DC /* Pods */,
+				A39192D81BBC0674C27C9480 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDD78D272724CA4F005FA97D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDD78D262724CA4F005FA97D /* RSSchool_FinalTask.app */,
+				EDD78D3F2724CA54005FA97D /* RSSchool_FinalTaskTests.xctest */,
+				EDD78D492724CA54005FA97D /* RSSchool_FinalTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDD78D282724CA4F005FA97D /* RSSchool_FinalTask */ = {
+			isa = PBXGroup;
+			children = (
+				EDD78D292724CA4F005FA97D /* AppDelegate.swift */,
+				ED5FC7812725E5620055FDDF /* RSApplicationCoordinator.swift */,
+				ED5FC7822725E5620055FDDF /* Coordinator */,
+				EDE6A0492724CD1D007CA607 /* Models */,
+				EDE6A0452724CCCA007CA607 /* Services */,
+				EDE6A0462724CCDA007CA607 /* Screens */,
+				ED3B47C4273169D70058C843 /* Helpers */,
+				ED5FC79B272864660055FDDF /* CustomElements */,
+				ED5FC792272623320055FDDF /* Extensions */,
+				ED64806D2741ABC100AB9375 /* LaunchImage */,
+				EDD78D352724CA53005FA97D /* Assets.xcassets */,
+				EDD78D3A2724CA53005FA97D /* Info.plist */,
+				EDE6A0432724CC88007CA607 /* GoogleService-Info.plist */,
+				EDD78D322724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodeld */,
+			);
+			path = RSSchool_FinalTask;
+			sourceTree = "<group>";
+		};
+		EDD78D422724CA54005FA97D /* RSSchool_FinalTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED91335B273EF74400A612C6 /* RSAuthorizationServiceTests.swift */,
+			);
+			path = RSSchool_FinalTaskTests;
+			sourceTree = "<group>";
+		};
+		EDD78D4C2724CA54005FA97D /* RSSchool_FinalTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDD78D4D2724CA54005FA97D /* RSSchool_FinalTaskUITests.swift */,
+				EDD78D4F2724CA54005FA97D /* RSSchool_FinalTaskUITestsLaunchTests.swift */,
+			);
+			path = RSSchool_FinalTaskUITests;
+			sourceTree = "<group>";
+		};
+		EDE6A0452724CCCA007CA607 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B2EE32738342800ACE1B9 /* Validation.swift */,
+				EDE6A0472724CD03007CA607 /* DatabaseService.swift */,
+				ED7BA83F272AED960026E195 /* AuthorizationService.swift */,
+				ED0D6F8E272B5393009D82B9 /* AlertPresenter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EDE6A0462724CCDA007CA607 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EDD78D372724CA53005FA97D /* LaunchScreen.storyboard */,
+				ED5FC78D272600BC0055FDDF /* TabBar */,
+				ED5FC7862725E9B90055FDDF /* Map */,
+				ED7BA836272ACAC60026E195 /* UserAccount */,
+				ED3B2ECE2736928400ACE1B9 /* CreateDump */,
+				ED913361273FDBBA00A612C6 /* Statistics */,
+				ED0D6F86272B396F009D82B9 /* LoginAndRegistration */,
+				ED5FC7A02728BCF00055FDDF /* DumpDetail */,
+				ED913345273DBE3800A612C6 /* DumpTables */,
+				ED4836242747ED0E00FA6BF1 /* ImagePresentation */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EDE6A0492724CD1D007CA607 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B47C22730A9EE0058C843 /* UserModel.swift */,
+				ED913373273FE67100A612C6 /* UserEasyModel.swift */,
+				EDE6A04A2724CD2E007CA607 /* DumpModel.swift */,
+				ED3B2EDE2737462800ACE1B9 /* CurrentLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDD78D252724CA4F005FA97D /* RSSchool_FinalTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD78D532724CA54005FA97D /* Build configuration list for PBXNativeTarget "RSSchool_FinalTask" */;
+			buildPhases = (
+				D198A516C8103AA52EA0464D /* [CP] Check Pods Manifest.lock */,
+				EDD78D222724CA4F005FA97D /* Sources */,
+				EDD78D232724CA4F005FA97D /* Frameworks */,
+				EDD78D242724CA4F005FA97D /* Resources */,
+				5F0BA380580E1E1E8A39859A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSchool_FinalTask;
+			productName = RSSchool_FinalTask;
+			productReference = EDD78D262724CA4F005FA97D /* RSSchool_FinalTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDD78D3E2724CA54005FA97D /* RSSchool_FinalTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD78D562724CA54005FA97D /* Build configuration list for PBXNativeTarget "RSSchool_FinalTaskTests" */;
+			buildPhases = (
+				CC65C55EC0B4CFF67FD49039 /* [CP] Check Pods Manifest.lock */,
+				EDD78D3B2724CA54005FA97D /* Sources */,
+				EDD78D3C2724CA54005FA97D /* Frameworks */,
+				EDD78D3D2724CA54005FA97D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDD78D412724CA54005FA97D /* PBXTargetDependency */,
+			);
+			name = RSSchool_FinalTaskTests;
+			productName = RSSchool_FinalTaskTests;
+			productReference = EDD78D3F2724CA54005FA97D /* RSSchool_FinalTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDD78D482724CA54005FA97D /* RSSchool_FinalTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD78D592724CA54005FA97D /* Build configuration list for PBXNativeTarget "RSSchool_FinalTaskUITests" */;
+			buildPhases = (
+				8CD9CEA5883641B1F7BFC64B /* [CP] Check Pods Manifest.lock */,
+				EDD78D452724CA54005FA97D /* Sources */,
+				EDD78D462724CA54005FA97D /* Frameworks */,
+				EDD78D472724CA54005FA97D /* Resources */,
+				287B6CBEF309E2763B243727 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDD78D4B2724CA54005FA97D /* PBXTargetDependency */,
+			);
+			name = RSSchool_FinalTaskUITests;
+			productName = RSSchool_FinalTaskUITests;
+			productReference = EDD78D492724CA54005FA97D /* RSSchool_FinalTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDD78D1E2724CA4F005FA97D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					EDD78D252724CA4F005FA97D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					EDD78D3E2724CA54005FA97D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = EDD78D252724CA4F005FA97D;
+					};
+					EDD78D482724CA54005FA97D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = EDD78D252724CA4F005FA97D;
+					};
+				};
+			};
+			buildConfigurationList = EDD78D212724CA4F005FA97D /* Build configuration list for PBXProject "RSSchool_FinalTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDD78D1D2724CA4F005FA97D;
+			productRefGroup = EDD78D272724CA4F005FA97D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDD78D252724CA4F005FA97D /* RSSchool_FinalTask */,
+				EDD78D3E2724CA54005FA97D /* RSSchool_FinalTaskTests */,
+				EDD78D482724CA54005FA97D /* RSSchool_FinalTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDD78D242724CA4F005FA97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD78D392724CA53005FA97D /* LaunchScreen.storyboard in Resources */,
+				EDE6A0442724CC88007CA607 /* GoogleService-Info.plist in Resources */,
+				ED91334D273DBFFE00A612C6 /* RSDumpTableViewController.xib in Resources */,
+				ED7BA83A272ACB130026E195 /* RSRegistrationVC.xib in Resources */,
+				ED3B2EDB2736A26B00ACE1B9 /* RSDumpCreateVC.xib in Resources */,
+				ED5FC7A82728C1BD0055FDDF /* RSDumpDetailVC.xib in Resources */,
+				ED0D6F8B272B4565009D82B9 /* RSLoginVC.xib in Resources */,
+				ED91336D273FDF1600A612C6 /* RSUserTableViewCell.xib in Resources */,
+				EDD78D362724CA53005FA97D /* Assets.xcassets in Resources */,
+				ED913351273DC01E00A612C6 /* RSDumpTableViewCell.xib in Resources */,
+				ED913369273FDDEA00A612C6 /* RSStatisticsTableVC.xib in Resources */,
+				ED3B47BC27306FC70058C843 /* RSUserAccountVC.xib in Resources */,
+				ED6480712741AFDF00AB9375 /* AppLogo.png in Resources */,
+				ED5FC78C2725F9510055FDDF /* RSMapVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD78D3D2724CA54005FA97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD78D472724CA54005FA97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287B6CBEF309E2763B243727 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F0BA380580E1E1E8A39859A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RSSchool_FinalTask/Pods-RSSchool_FinalTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RSSchool_FinalTask/Pods-RSSchool_FinalTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RSSchool_FinalTask/Pods-RSSchool_FinalTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD9CEA5883641B1F7BFC64B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC65C55EC0B4CFF67FD49039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSchool_FinalTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D198A516C8103AA52EA0464D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSchool_FinalTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDD78D222724CA4F005FA97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5FC798272623320055FDDF /* UIColor+DefaultColors.swift in Sources */,
+				ED7BA83E272AEBE00026E195 /* RSRegistrationVM.swift in Sources */,
+				ED913358273EAABE00A612C6 /* RSDumpPickedTableVM.swift in Sources */,
+				ED5FC7882725EA0C0055FDDF /* RSMapCoordinator.swift in Sources */,
+				ED3B2ECD27355FE400ACE1B9 /* CALayer+Shadow.swift in Sources */,
+				ED913355273DDC0C00A612C6 /* RSDumpTableCoordinator.swift in Sources */,
+				ED3B47BF27308F000058C843 /* RSUserSettingsTableViewCell.swift in Sources */,
+				ED7BA840272AED960026E195 /* AuthorizationService.swift in Sources */,
+				ED0D6F8D272B4565009D82B9 /* RSRLoginVC.swift in Sources */,
+				EDD78D342724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodeld in Sources */,
+				ED5FC7A72728C1BD0055FDDF /* RSDumpDetailVC.swift in Sources */,
+				ED3B2EE42738342800ACE1B9 /* Validation.swift in Sources */,
+				ED913353273DC71200A612C6 /* RSDumpTableVM.swift in Sources */,
+				ED913368273FDDEA00A612C6 /* RSStatisticsTableVC.swift in Sources */,
+				ED3B47C32730A9EE0058C843 /* UserModel.swift in Sources */,
+				ED913360273F087800A612C6 /* RSShadowImageView.swift in Sources */,
+				ED913374273FE67100A612C6 /* UserEasyModel.swift in Sources */,
+				ED5FC78F272600D00055FDDF /* RSTabBarVC.swift in Sources */,
+				ED3B47CC2731F2880058C843 /* RSTableViewHeader.swift in Sources */,
+				ED3B2EDF2737462800ACE1B9 /* CurrentLocation.swift in Sources */,
+				ED5FC791272603B40055FDDF /* RSTabBarCoordinator.swift in Sources */,
+				ED3B2EC72734426700ACE1B9 /* RSDumpMarkerAnnotation.swift in Sources */,
+				ED3B2EDD2736B66200ACE1B9 /* RSMenuButton.swift in Sources */,
+				ED7BA83C272ADC8F0026E195 /* RSLoginCoordinator.swift in Sources */,
+				ED3B47C12730A6630058C843 /* RSUserSettingsTableViewCellViewModel.swift in Sources */,
+				ED913350273DC01E00A612C6 /* RSDumpTableViewCell.swift in Sources */,
+				ED3B47B8273068D90058C843 /* RSUserAccountVM.swift in Sources */,
+				ED4836262747ED2B00FA6BF1 /* RSImagePresentationVC.swift in Sources */,
+				ED5FC79F2728A79B0055FDDF /* RSDefaultIcons.swift in Sources */,
+				ED3B47D02732B7BA0058C843 /* RSUserSettingsTableViewCellEditable.swift in Sources */,
+				ED3B2EDA2736A26B00ACE1B9 /* RSDumpCreateVC.swift in Sources */,
+				ED5FC7A42728C0480055FDDF /* RSDumpDetailVM.swift in Sources */,
+				ED913370273FE1C500A612C6 /* RSUserTableViewCellModel.swift in Sources */,
+				ED3B47CE2731F7370058C843 /* RSUserSettingsTableViewCellValue1.swift in Sources */,
+				ED913363273FDC0400A612C6 /* RSStatisticsCoordinator.swift in Sources */,
+				ED5FC78B2725F9510055FDDF /* RSMapVC.swift in Sources */,
+				ED7BA839272ACB130026E195 /* RSRegistrationVC.swift in Sources */,
+				ED0D6F8F272B5393009D82B9 /* AlertPresenter.swift in Sources */,
+				ED913378274071BD00A612C6 /* RSNavigationVC.swift in Sources */,
+				ED5FC79A2726DD540055FDDF /* RSMapVM.swift in Sources */,
+				ED5FC7AF2729F50B0055FDDF /* RSImageCell.swift in Sources */,
+				ED913376274070A700A612C6 /* RSCircleImageView.swift in Sources */,
+				ED0D6F8C272B4565009D82B9 /* RSLoginVM.swift in Sources */,
+				ED3B2EE6273975A500ACE1B9 /* RSActivityIndicator.swift in Sources */,
+				EDE6A04B2724CD2E007CA607 /* DumpModel.swift in Sources */,
+				ED913344273C14C200A612C6 /* RSButton.swift in Sources */,
+				EDE6A0482724CD03007CA607 /* DatabaseService.swift in Sources */,
+				EDD78D2A2724CA4F005FA97D /* AppDelegate.swift in Sources */,
+				ED913365273FDC1400A612C6 /* RSStatisticsVM.swift in Sources */,
+				ED3B47B6273067F90058C843 /* RSUserAccountCoordinator.swift in Sources */,
+				ED3B2ED2273694E600ACE1B9 /* RSDumpCreateVM.swift in Sources */,
+				ED91336C273FDF1600A612C6 /* RSUserTableViewCell.swift in Sources */,
+				ED91337A274136AD00A612C6 /* RSDumpClusterView.swift in Sources */,
+				ED3B47C6273169EA0058C843 /* RSDateConverter.swift in Sources */,
+				ED5FC7842725E5620055FDDF /* RSApplicationCoordinator.swift in Sources */,
+				ED3B47C8273195160058C843 /* RSUserSettingsTableViewCellWithSubtitle.swift in Sources */,
+				ED3B2ED0273692AC00ACE1B9 /* RSDumpCreateCoordinator.swift in Sources */,
+				ED91335A273EE22A00A612C6 /* DumpTableViewCellModel.swift in Sources */,
+				ED5FC7AC27296E440055FDDF /* RSRoundedButtonWithLabel.swift in Sources */,
+				ED3B47BB27306FC70058C843 /* RSUserAccountVC.swift in Sources */,
+				ED5FC79D272864950055FDDF /* RSMapButton.swift in Sources */,
+				ED5FC7AA2728C7B20055FDDF /* RSDumpDetailPresentationVC.swift in Sources */,
+				ED91334C273DBFFE00A612C6 /* RSDumpTableViewController.swift in Sources */,
+				ED5FC7852725E5620055FDDF /* RSCoordinator.swift in Sources */,
+				ED5FC7A32728C0480055FDDF /* RSDumpDetailCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD78D3B2724CA54005FA97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED91335C273EF74400A612C6 /* RSAuthorizationServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD78D452724CA54005FA97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD78D4E2724CA54005FA97D /* RSSchool_FinalTaskUITests.swift in Sources */,
+				EDD78D502724CA54005FA97D /* RSSchool_FinalTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDD78D412724CA54005FA97D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDD78D252724CA4F005FA97D /* RSSchool_FinalTask */;
+			targetProxy = EDD78D402724CA54005FA97D /* PBXContainerItemProxy */;
+		};
+		EDD78D4B2724CA54005FA97D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDD78D252724CA4F005FA97D /* RSSchool_FinalTask */;
+			targetProxy = EDD78D4A2724CA54005FA97D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDD78D372724CA53005FA97D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD78D382724CA53005FA97D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDD78D512724CA54005FA97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDD78D522724CA54005FA97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDD78D542724CA54005FA97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80584DB900BD45710B66B545 /* Pods-RSSchool_FinalTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RSSchool_FinalTask/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-FinalTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EDD78D552724CA54005FA97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B8C25E37DA5410A6DA82B5 /* Pods-RSSchool_FinalTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RSSchool_FinalTask/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-FinalTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EDD78D572724CA54005FA97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4523B3F1BBB6FF014BC77D6D /* Pods-RSSchool_FinalTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-FinalTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSchool_FinalTask.app/RSSchool_FinalTask";
+			};
+			name = Debug;
+		};
+		EDD78D582724CA54005FA97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B881B1F0F9A3ADCFDAE616C /* Pods-RSSchool_FinalTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-FinalTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSchool_FinalTask.app/RSSchool_FinalTask";
+			};
+			name = Release;
+		};
+		EDD78D5A2724CA54005FA97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61B40F93DFA544E663993CE /* Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-FinalTaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSSchool_FinalTask;
+			};
+			name = Debug;
+		};
+		EDD78D5B2724CA54005FA97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CDE368DB2D0DE239680C2A /* Pods-RSSchool_FinalTask-RSSchool_FinalTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-FinalTaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSSchool_FinalTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDD78D212724CA4F005FA97D /* Build configuration list for PBXProject "RSSchool_FinalTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD78D512724CA54005FA97D /* Debug */,
+				EDD78D522724CA54005FA97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD78D532724CA54005FA97D /* Build configuration list for PBXNativeTarget "RSSchool_FinalTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD78D542724CA54005FA97D /* Debug */,
+				EDD78D552724CA54005FA97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD78D562724CA54005FA97D /* Build configuration list for PBXNativeTarget "RSSchool_FinalTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD78D572724CA54005FA97D /* Debug */,
+				EDD78D582724CA54005FA97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD78D592724CA54005FA97D /* Build configuration list for PBXNativeTarget "RSSchool_FinalTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD78D5A2724CA54005FA97D /* Debug */,
+				EDD78D5B2724CA54005FA97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDD78D322724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDD78D332724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodel */,
+			);
+			currentVersion = EDD78D332724CA4F005FA97D /* RSSchool_FinalTask.xcdatamodel */;
+			path = RSSchool_FinalTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EDD78D1E2724CA4F005FA97D /* Project object */;
+}
